@@ -3,6 +3,7 @@
 ##Instructions
 
 `cd` into the directory
+Run `npm install`
 
 To run the example use `npm start`;
 To run the tests use `npm test`;
