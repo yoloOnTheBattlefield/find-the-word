@@ -34,8 +34,10 @@ describe("differentByOne", () => {
 describe("stepsToTarget", () => {
   it("finds the word in 4 steps", () => {
     const testLength = stepsToTarget("hit", "cog", dictionary);
-    const testLength2 = stepsToTarget("hit", "hot", dictionary);
     expect(testLength).to.equal(4);
+  });
+  it("finds the word in 1 step", () => {
+    const testLength2 = stepsToTarget("hit", "hot", dictionary);
     expect(testLength2).to.equal(1);
   });
   it("returns 0 if the word is not found", () => {
